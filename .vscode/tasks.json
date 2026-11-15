@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "shell": { "executable": "powershell.exe", "args": ["-NoProfile", "-Command"] }
+  },
+  "tasks": [
+    {
+      "label": "Build",
+      "detail": "Build the debug APK",
+      "type": "shell",
+      "command": ".\\gradlew.bat assembleDebug",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Install",
+      "detail": "Build, install on the USB device, and launch",
+      "type": "shell",
+      "command": ".\\gradlew.bat installDebug; if ($?) { adb shell am start -n com.resumelens/.MainActivity }",
+      "problemMatcher": []
+    },
+    {
+      "label": "Logcat",
+      "detail": "Stream logs from the running app only",
+      "type": "shell",
+      "command": "$appPid = adb shell pidof -s com.resumelens; if (-not $appPid) { Write-Host 'App is not running. Run the Install task first.'; exit 1 }; adb logcat -v color --pid=$appPid",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Test",
+      "detail": "Run JVM unit + Robolectric Compose tests",
+      "type": "shell",
+      "command": ".\\gradlew.bat testDebugUnitTest",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
