@@ -126,7 +126,7 @@ In VS Code these are available as tasks (**Terminal → Run Task**): *Build*, *I
 | Persistence | Room (KSP, exported schema) |
 | Networking | Retrofit 3, OkHttp 5, kotlinx.serialization |
 | PDF | PdfBox-Android |
-| AI | Google Gemini `generateContent` with structured JSON output |
+| AI | Google Gemini (`gemini-flash-lite-latest`) `generateContent` with structured JSON output |
 | Testing | JUnit 4, MockK, Turbine, kotlinx-coroutines-test, Robolectric + Compose UI Test |
 | Build | AGP 9 (built-in Kotlin), Gradle version catalog, Gradle wrapper |
 
@@ -143,5 +143,7 @@ In VS Code these are available as tasks (**Terminal → Run Task**): *Build*, *I
 - **Multi-column layouts** can extract in an unusual order, which may slightly affect results.
 - **LLM output varies.** Scores can shift by a few points between runs. Temperature is set low (0.2) and the
   prompt includes a scoring rubric to keep results consistent.
+- **Model choice:** the default is Gemini Flash-Lite, which answered in about 3 seconds in testing. The full Flash model is a
+  "thinking" model that took more than 4 minutes on the free tier, longer than the app's 2-minute timeout. Override it with `GEMINI_MODEL`.
 - **Free-tier rate limits** show a "wait a minute" error rather than queuing requests.
 - No cloud sync: history lives only on the device (`allowBackup` is off on purpose, because resumes are personal data).

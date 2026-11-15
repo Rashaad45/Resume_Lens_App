@@ -4,5 +4,6 @@ sdk.dir=C\:\\Android
 # Free key from https://aistudio.google.com/apikey
 GEMINI_API_KEY=your-key-here
 
-# Optional: override the model. Default is the "gemini-flash-latest" alias.
-# GEMINI_MODEL=gemini-flash-latest
+# Optional: override the model. Default is the "gemini-flash-lite-latest" alias (answers in ~3s).
+# Full "gemini-flash-latest" is a thinking model and took several minutes on the free tier.
+# GEMINI_MODEL=gemini-flash-lite-latest
