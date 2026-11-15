@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ResumeLens</string>
+
+    <!-- Navigation -->
+    <string name="nav_analyze">Analyze</string>
+    <string name="nav_history">History</string>
+
+    <!-- Analyze -->
+    <string name="analyze_title">How well does your\nresume fit?</string>
+    <string name="analyze_subtitle">Upload your resume and paste a job description. You\'ll get a match score, skill gaps, and stronger bullet points.</string>
+    <string name="analyze_step_resume">1 · Resume</string>
+    <string name="analyze_step_job">2 · Job description</string>
+    <string name="analyze_pick_pdf">Choose a PDF</string>
+    <string name="analyze_pick_pdf_hint">Text-based PDFs work best · max 10 MB</string>
+    <string name="analyze_reading_pdf">Reading your resume…</string>
+    <string name="analyze_resume_meta">%1$d pages · %2$s characters</string>
+    <string name="analyze_replace">Replace</string>
+    <string name="analyze_remove">Remove resume</string>
+    <string name="analyze_job_placeholder">Paste the full job posting here…</string>
+    <string name="analyze_paste">Paste</string>
+    <string name="analyze_clear">Clear</string>
+    <string name="analyze_job_counter">%1$d / %2$d min characters</string>
+    <string name="analyze_job_counter_ok">%1$s characters</string>
+    <string name="analyze_button">Analyze match</string>
+    <string name="analyze_running">Analyzing… this can take up to a minute</string>
+    <string name="analyze_privacy">Your resume and the job description are sent to Google Gemini for analysis.</string>
+    <string name="analyze_try_again">Try again</string>
+    <string name="dismiss">Dismiss</string>
+
+    <!-- Result -->
+    <string name="result_title">Results</string>
+    <string name="back">Back</string>
+    <string name="result_match">match</string>
+    <string name="result_band_strong">Strong match</string>
+    <string name="result_band_fair">Partial match</string>
+    <string name="result_band_weak">Needs work</string>
+    <string name="result_missing_skills">Missing skills</string>
+    <string name="result_missing_skills_empty">No major skill gaps found.</string>
+    <string name="result_keywords">ATS keywords</string>
+    <string name="result_keywords_count">%1$d of %2$d found in your resume</string>
+    <string name="result_keywords_empty">No keywords were returned.</string>
+    <string name="result_bullets">Bullet point rewrites</string>
+    <string name="result_bullets_empty">Your bullet points already read well.</string>
+    <string name="result_before">Before</string>
+    <string name="result_after">After</string>
+    <string name="result_copy">Copy rewrite</string>
+    <string name="result_copied">Rewrite copied</string>
+    <string name="result_not_found_title">Analysis not found</string>
+    <string name="result_not_found_body">It may have been deleted.</string>
+    <string name="keyword_found">found</string>
+    <string name="keyword_missing">missing</string>
+
+    <!-- History -->
+    <string name="history_title">History</string>
+    <string name="history_empty_title">No analyses yet</string>
+    <string name="history_empty_body">Your past resume checks will show up here.</string>
+    <string name="history_empty_action">Analyze a resume</string>
+    <string name="history_deleted">Analysis deleted</string>
+    <string name="history_undo">Undo</string>
+    <string name="history_delete">Delete</string>
+    <string name="history_untitled">Untitled role</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+
+    <!-- Errors -->
+    <string name="error_title">Something went wrong</string>
+    <string name="error_pdf_unreadable">This file couldn\'t be opened as a PDF. Try exporting it again.</string>
+    <string name="error_pdf_encrypted">This PDF is password-protected. Export an unlocked copy and try again.</string>
+    <string name="error_pdf_no_text">This PDF has no selectable text (it may be a scanned image). Export it from your editor as a text PDF.</string>
+    <string name="error_pdf_too_large">This PDF is too large. Please use a file under 10 MB.</string>
+    <string name="error_resume_short">Your resume has too little text to analyze.</string>
+    <string name="error_job_short">The job description is too short. Paste the full posting.</string>
+    <string name="error_missing_key">No API key configured. Add GEMINI_API_KEY to local.properties and rebuild.</string>
+    <string name="error_invalid_key">The Gemini API key was rejected. Check GEMINI_API_KEY in local.properties.</string>
+    <string name="error_model">The configured Gemini model isn\'t available. Check GEMINI_MODEL in local.properties.</string>
+    <string name="error_rate_limited">Free-tier rate limit reached. Wait a minute and try again.</string>
+    <string name="error_no_connection">No internet connection. Check your network and try again.</string>
+    <string name="error_timeout">The analysis took too long. Please try again.</string>
+    <string name="error_blocked">The request was blocked by the model\'s safety filters.</string>
+    <string name="error_server">Gemini is having trouble right now (error %1$d). Try again shortly.</string>
+    <string name="error_bad_response">The AI returned an unexpected response. Please try again.</string>
+    <string name="error_unknown">Something unexpected happened. Please try again.</string>
+</resources>
