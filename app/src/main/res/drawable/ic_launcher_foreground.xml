@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 108dp canvas; artwork kept inside the central 66dp safe zone (21..87). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Resume page -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M37,26h24l8,8v38a4,4 0,0 1,-4 4h-28a4,4 0,0 1,-4 -4v-42a4,4 0,0 1,4 -4z" />
+    <!-- Folded corner -->
+    <path
+        android:fillColor="#FFC7CDFF"
+        android:pathData="M61,26l8,8h-6a2,2 0,0 1,-2 -2z" />
+    <!-- Text lines -->
+    <path
+        android:fillColor="#FFC7CDFF"
+        android:pathData="M39,38h16v3h-16z M39,45h22v3h-22z M39,52h12v3h-12z" />
+
+    <!-- Lens -->
+    <path
+        android:fillColor="#FF3346D3"
+        android:strokeColor="#FFFFB547"
+        android:strokeWidth="5"
+        android:pathData="M64,53a11,11 0,1 1,0 22a11,11 0,1 1,0 -22z" />
+    <!-- Handle -->
+    <path
+        android:strokeColor="#FFFFB547"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M72.5,72.5L80,80" />
+    <!-- Check mark inside lens -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M59,64.5l3.5,3.5l6.5,-7" />
+</vector>
