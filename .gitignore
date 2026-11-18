@@ -1,21 +1,22 @@
-# Secrets: never commit
-local.properties
-
-# Gradle / build
 .gradle/
 build/
-.kotlin/
-captures/
-*.apk
-*.aab
-
-# IDE
+**/build/
+local.properties
 .idea/
 *.iml
-.vscode/*
-!.vscode/tasks.json
-!.vscode/extensions.json
-
-# OS
-.DS_Store
-Thumbs.db
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.keystore
+*.jks
+google-services.json
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env
+node_modules/
+sample_resumes/
+uploads/
